@@ -6,6 +6,14 @@
   <router-view/>
 </template>
 
+<script>
+export default {
+  mounted() {
+    this.$store.commit('updateFromLocalStorage')
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
